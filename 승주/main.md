@@ -1,1 +1,1 @@
-# goodeeStudy
+# AlgorithmStudy
