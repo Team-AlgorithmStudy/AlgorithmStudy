@@ -1,0 +1,29 @@
+package test0620;
+
+import java.util.Scanner;
+
+public class MainProgrammers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        //최초입력 변수
+        int firstNum = scanner.nextInt();
+
+        //돌릴 변수
+        int testNum = firstNum;
+
+        //전체 카운트
+        int count = 0;
+
+        do {
+            count++;
+            int num1 = testNum/10;
+            int num2 = testNum%10;
+
+            testNum = num1 + num2;
+            testNum = num2 * 10 + testNum%10;
+
+        }while(firstNum != testNum);
+        System.out.println(count);
+    }
+}
