@@ -5,9 +5,9 @@ public class IdRecommend {
 	public static void main(String[] args) {
 		String new_id="...!@BaT#*..y.abcdefghijklm";
 		String match2 = "[^a-z0-9-_.]";
-		String match3 = "\\.{2,}";
-		String match4 = "^\\.";
-		String match4_1 = "\\.$";
+		String match3 = "[.]{2,}";
+		String match4 = "^[.]";
+		String match4_1 = "[.]$";
 		System.out.println(new_id);
 		new_id = new_id.toLowerCase();
 		System.out.println(new_id);
