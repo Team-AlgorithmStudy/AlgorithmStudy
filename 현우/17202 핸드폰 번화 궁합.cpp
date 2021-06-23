@@ -10,7 +10,7 @@ int main() {
 	}
 	while (answer.size() != 2) {
 		for (int i = 0; i < answer.size()-1; i++) {
-			int k = answer[i]-'0' + (int)answer[i + 1]-'0';
+			int k = answer[i]-'0' + answer[i + 1]-'0';
 			k %= 10;
 			answer[i] =k+'0';
 		}
