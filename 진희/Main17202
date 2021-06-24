@@ -1,0 +1,38 @@
+
+import java.util.Scanner;
+
+public class PhonePair {
+
+    public static void main(String[] args) throws NumberFormatException {
+        Scanner scanner = new Scanner(System.in);
+
+        String num1 = scanner.next();
+        String num2 = scanner.next();
+        String num ="";
+
+
+        for(int i=0;i<num1.length();i++){
+            num += num1.charAt(i);
+            num += num2.charAt(i);
+        }
+        String[] sp = num.split("");
+        int[] spInt = new int[sp.length];
+
+        for(int i =0; i<sp.length; i++){
+            spInt[i]=Integer.parseInt(sp[i]);
+        }
+        for(int j=spInt.length;j>2;j--){
+            int[] spIntTemp = new int[spInt.length-1];
+
+            for(int i=0; i<j-1;i++){
+                int sum = spInt[i]+spInt[i+1];
+                spIntTemp[i]= sum%10;
+            }
+            spInt = spIntTemp;
+        }
+        for (int i : spInt
+             ) {
+            System.out.print(i);
+        }
+    }
+}
