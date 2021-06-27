@@ -23,13 +23,7 @@ public class bj5622 {
         for(int i = 0; i<di.length; i++){
 
         /*    System.out.println("di = " + di[i]);*/
-
-            if(di[i].equals("1")){
-
-                time = 2;
-                sum += time;
-
-            }else if(di[i].equals("A") || di[i].equals("B") || di[i].equals("C")){
+             if(di[i].equals("A") || di[i].equals("B") || di[i].equals("C")){
 
                 time = 3;
                 sum += time;
@@ -66,11 +60,6 @@ public class bj5622 {
             }else if (di[i].equals("W") ||di[i].equals("X") ||di[i].equals("Y") ||di[i].equals("Z")){
 
                 time = 10;
-                sum += time;
-
-            }else if (di[i].equals("0")){
-
-                time = 11;
                 sum += time;
 
             }
