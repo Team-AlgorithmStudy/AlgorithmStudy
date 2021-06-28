@@ -1,7 +1,5 @@
 package codingTest;
 
-import java.util.Scanner;
-
 public class T2 {
 	
 //Ctrl + Shift + f 정렬
