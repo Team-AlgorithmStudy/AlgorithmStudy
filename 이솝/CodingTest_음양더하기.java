@@ -7,7 +7,6 @@ public class T2 {
 //Ctrl + Shift + f 정렬
 	
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 		int arr[] = { 4, 7, 12 };
 		Boolean signs[] = { true, false, true };
 		int sum = 0;
