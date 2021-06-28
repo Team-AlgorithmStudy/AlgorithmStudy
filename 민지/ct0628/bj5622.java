@@ -32,7 +32,7 @@ public class bj5622 {
                 time = 4;
                 sum += time;
 
-            }else if(di[i].equals("G") ||di[i].equals("H") ||di[i].equals("I")){
+            }else if(di[i].equals("G") ||di[i].equals("H") || di[i].equals("I")){
 
                 time = 5;
                 sum += time;
