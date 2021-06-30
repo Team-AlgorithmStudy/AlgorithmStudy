@@ -4,9 +4,8 @@ import java.util.*;
 
 public class pro_모의고사 {
     public static void main(String[] args) {
-        int[] answers = {1,3,2,4,2};
+        int[] answers = {1,2,3,4,5};
 
-/*
         int[] a = {1,2,3,4,5};
         int[] b = {2,1,2,3,2,4,2,5};
         int[] c = {3,3,1,1,2,2,4,4,5,5};
@@ -15,7 +14,6 @@ public class pro_모의고사 {
         int[] answer = new int[4];
         
         int max = 0;
-        int maxindex = 0;
         HashSet<Integer> set = new HashSet<>();
         
         
@@ -37,22 +35,20 @@ public class pro_모의고사 {
         // 1부터 시작 -> 위에서 1인덱스부터 넣었기 때문에
         for(int i = 1; i < answer.length; i++){
             
-            if(answer[i] > max){
+            // i인덱스(맞은갯수)가 max값보다 크면
+            if(answer[i] > max) {
+                // max에 제일큰 수 대입
                 max = answer[i];
-                // 인덱스 값은 i가된다
-                maxindex = i;
-                // set에 추출한 인덱스 값을 넣어준다
-                set.add(maxindex);
-            }
-            if(answer[i] == max){
-                max = answer[i];
-                maxindex = i;
-                set.add(maxindex);
-            }
-            if(answer[i] != max){
-                continue;
             }
 
+        }
+        
+        for (int i = 1; i < answer.length; i++){
+            // 제일 큰 수와 i인덱스가 같으면
+            if(max == answer[i]){
+                // set에 넣어준다
+                set.add(i);
+            }
         }
         // set을 배열에 넣어주기위해 list로 치환
         List<Integer> list = new ArrayList(set);
@@ -69,9 +65,8 @@ public class pro_모의고사 {
         for (int i = 0; i < an.length; i++){
             System.out.println(an[i]);
         }
-*/
 
-        int[] a = {1, 2, 3, 4, 5};
+  /*      int[] a = {1, 2, 3, 4, 5};
         int[] b = {2, 1, 2, 3, 2, 4, 2, 5};
         int[] c = {3, 3, 1, 1, 2, 2, 4, 4, 5, 5};
 
@@ -104,7 +99,7 @@ public class pro_모의고사 {
         for (int i = 0; i < an.length; i++){
             System.out.println(an[i]);
         }
-      
+*/
     }
 }
 
