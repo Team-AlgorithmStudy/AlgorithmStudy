@@ -33,12 +33,12 @@ public class pro_전화번호목록 {
 
         for(int i = 0; i < phone_book.length; i++) {
                 // 배열의 i번째 값의 길이만큼 -> i번째 값을확인하려고
-            for(int j = 1; j < phone_book[i].length(); j++) {
+            for(int j = i+1; j < phone_book[i].length(); j++) {
                 // map에 배열 i값중 0번째 인덱스부터 j번째 인덱스 까지의 값이 존재하면
                 if(map.containsKey(phone_book[i].substring(0,j))) {
 
                     answer = false;
-                    System.out.println(answer);
+                   break;
                 }
             }
         }  System.out.println(answer);*/
@@ -57,7 +57,7 @@ public class pro_전화번호목록 {
                 if(set.contains(phone_book[i].substring(0,j))){
 
                     answer = false;
-                  
+
                 }
 
             }
