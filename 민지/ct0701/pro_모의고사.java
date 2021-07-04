@@ -14,14 +14,15 @@ public class pro_모의고사 {
         int[] answer = new int[4];
         
         int max = 0;
-        HashSet<Integer> set = new HashSet<>();
-        
+       /* HashSet<Integer> set = new HashSet<>();*/
+        // set을 배열에 넣어주기위해 list로 치환
+        List<Integer> list = new ArrayList<>();
         
         for (int i = 0; i < answers.length; i++){
             
             if(answers[i] == a[i % 5]){
                 // 맞은갯수 카운트 
-                answer[1]++;    
+                answer[1]++;
             }
             if(answers[i] == b[i % 8]){
                 answer[2]++;
@@ -40,18 +41,16 @@ public class pro_모의고사 {
                 // max에 제일큰 수 대입
                 max = answer[i];
             }
-
         }
         
         for (int i = 1; i < answer.length; i++){
             // 제일 큰 수와 i인덱스가 같으면
             if(max == answer[i]){
                 // set에 넣어준다
-                set.add(i);
+                list.add(i);
             }
         }
-        // set을 배열에 넣어주기위해 list로 치환
-        List<Integer> list = new ArrayList(set);
+
 
         // 프로그래머스의 리턴타입이 배열이기 때문에 list를 배열로 치환
         int[] an = new int[list.size()];
