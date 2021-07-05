@@ -50,7 +50,7 @@ public class bj11726 {
         for(int i = 3; i <= n; i++) {
 
           tile[i] = (tile[i-2] + tile[i-1]) % 10007;
-          
+
         }
         System.out.println(tile[n]);
 
