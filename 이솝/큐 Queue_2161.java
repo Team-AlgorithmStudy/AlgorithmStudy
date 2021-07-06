@@ -21,13 +21,13 @@ public class Test2161 {
 			q.offer(i); // 큐에 보관
 
 		while (!q.isEmpty()) { // 큐가 비어있지 않을 때 반복
-			int num1 = q.poll(); // 젤 위에 있는 카드 빼내고 저장
+			int num1 = q.poll(); // 젤 위에 있는 카드 빼내고 num1에 저장
 			System.out.print(num1 + " "); // 젤 위에 카드 출력
 			
 			if (q.isEmpty()) // 큐가 비어있으면 => 중단
 				break;
 			
-			int num2 = q.poll(); // 두 번째로 위에 있는 카드 빼내고 저장
+			int num2 = q.poll(); // 두 번째로 위에 있는 카드 빼내고 num2에 저장
 			q.offer(num2); // 빼낸 카드 다시 큐에 넣기
 		}
 
