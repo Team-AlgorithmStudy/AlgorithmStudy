@@ -16,7 +16,6 @@ public class Test2161 {
     
     // Queue<자료형> Queue명 = new LinkedList<자료형>(크기);
 		Queue<Integer> q = new LinkedList<Integer>();
-
 		for (int i = 1; i <= N; i++)
 			q.offer(i); // 
 
