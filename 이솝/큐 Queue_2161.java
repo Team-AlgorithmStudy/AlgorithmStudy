@@ -1,5 +1,5 @@
-//보관한 값 꺼내고 반환 - poll()
-//순차보관 - offer() 
+// 보관한 값 꺼내고 반환 - poll()
+// 순차보관 - offer() 
 
 package codingTest;
 
@@ -14,7 +14,7 @@ public class Test2161 {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
     
-    //Queue<자료형> Queue명 = new LinkedList<자료형>(크기);
+    // Queue<자료형> Queue명 = new LinkedList<자료형>(크기);
 		Queue<Integer> q = new LinkedList<Integer>();
 
 		for (int i = 1; i <= N; i++)
