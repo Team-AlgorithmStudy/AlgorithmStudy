@@ -70,7 +70,7 @@ public class pro_땅따먹기 {
         Arrays.sort(land[land.length -1]);
         System.out.println(land[land.length -1][3]);*/
 
-        // 거꾸로 접근 -> 뒤에서부터 앞의 ㄱ밧을 통해 답을 구한다
+        // 거꾸로 접근 -> 뒤에서부터 앞의 값을 통해 답을 구한다
         // i+1 값의 최댓값 : i의 최댓값 + i+1에서 선택할 수 있는 최댓값
         for(int i=1; i<land.length; i++){
             land[i][0] += Math.max(Math.max(land[i-1][1], land[i-1][2]), land[i-1][3]);

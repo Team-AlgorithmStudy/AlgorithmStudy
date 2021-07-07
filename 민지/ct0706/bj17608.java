@@ -6,6 +6,7 @@ import java.util.Stack;
 public class bj17608 {
     public static void main(String[] args) {
 
+        // 틀림
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();

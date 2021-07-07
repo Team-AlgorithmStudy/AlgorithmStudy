@@ -28,9 +28,9 @@ public class pro_기능개발 {
         }
 
         for(int i = 0; i < count.length; i++){
-            queue.add(count[i]);
+            queue.offer(count[i]);
             System.out.println(queue);
-            
+
         }
     }
 }
