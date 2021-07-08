@@ -3,7 +3,7 @@ package com.company.ct0708;
 import java.util.*;
 
 public class bj1158 {
-    // 틀림
+    // 틀림 -> 확인
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Queue<Integer> queue = new LinkedList<>();
@@ -26,5 +26,7 @@ public class bj1158 {
             list.add(queue.poll());
         }
         System.out.println(list);
+        /*System.out.println(list.toString().substring(1,list.toString().length()-1));*/
+        System.out.printf("<%s>",list.toString().substring(1,list.toString().length()-1));
     }
 }
