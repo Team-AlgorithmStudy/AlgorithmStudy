@@ -5,8 +5,8 @@ public class pro_체육복 {
     public static void main(String[] args) {
 
         int n = 5; // 전체 학생의수
-        int[] lost = {1,2}; // 도난당한 학생
-        int[] reserve = {2,3}; // 여벌의 체육복
+        int[] lost = {2,4}; // 도난당한 학생
+        int[] reserve = {1,3,5}; // 여벌의 체육복
 
         int answer = 0; // 수업을 들을수 있는 학생의 수
 
@@ -21,7 +21,7 @@ public class pro_체육복 {
 
             // yn이 false일 경우
             while (!yn){
-                System.out.println("처음조건 " + yn);
+              /*  System.out.println("처음조건 " + yn);*/
                 // 여벌의 체육복을 가진 학생의 수만큼 while문이 돌면 break
                 if(j == reserve.length){
                     break;
@@ -49,7 +49,7 @@ public class pro_체육복 {
                     // 체육복 여분 여부를 true(여분있음)로 변경한다
                     yn = true;
 
-                    System.out.println("도난 - 여벌 = 1 reserve[j] =  " + reserve[j]);
+                   /* System.out.println("도난 - 여벌 = 1 reserve[j] =  " + reserve[j]);*/
 
                     // 도난당한 학생의 번호 - 여분의 체육복이 있는 학생의 번호의 값이 -1인경우
                 } else if (lost[i] - reserve[j] == -1){
@@ -57,8 +57,8 @@ public class pro_체육복 {
                     reserve[j] = -1;
                     // 체육복 여분 여부를 true(여분있음)로 변경한다
                     yn = true;
-                    System.out.println("도난 - 여벌 = -1 reserve[j] =  " + reserve[j]);
-
+                    /*System.out.println("도난 - 여벌 = -1 reserve[j] =  " + reserve[j]);
+*/
                 } else {
                     // 위의 경우가 아니면 j의값을 1씩 더해준다
                     j++;
@@ -67,7 +67,7 @@ public class pro_체육복 {
             }
             // while문이 돌고난후 yn(체육복 여분 여부 체크 내용)이 false라면
             if(!yn){
-                System.out.println("나중조건 " + yn);
+               /* System.out.println("나중조건 " + yn);*/
                 // 수업을 들을 수 잇는 학생 수에서 1씩 감소시킨다
                 answer--;
             }
