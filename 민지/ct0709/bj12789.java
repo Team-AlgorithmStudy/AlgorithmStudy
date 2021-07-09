@@ -1,6 +1,5 @@
 package com.company.ct0709;
 
-import java.awt.print.Pageable;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
@@ -13,7 +12,7 @@ public class bj12789 {
         int n = sc.nextInt();
         Queue<Integer> queue = new LinkedList<>();
         Stack<Integer> stack = new Stack<>();
-        int max = 0;
+
         for(int i = 0; i < n; i++){
             queue.offer(sc.nextInt());
         }
