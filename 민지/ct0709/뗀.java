@@ -21,44 +21,29 @@ public class 뗀 {
 
         for(int i = split.length-1; i >= 0; i--){
             stack.push(split[i]);
-           /* System.out.println("stack = "+stack);*/
+
             while (stack.size() >= 3 && isNumber(stack.peek())){
-                /*System.out.println("stack = " + stack);*/
-                if(isNumber(stack.peek())){
-                    a = Integer.parseInt(stack.pop());
-                    if(isNumber(stack.peek())){
-                        b = Integer.parseInt(stack.pop());
-                        if(stack.peek().equals("*")){
-                            stack.pop();
-                            stack.push(String.valueOf(a*b));
-                            /*System.out.print(stack.pop());*/
-                        } else if (stack.peek().equals("/")){
-                            stack.pop();
-                            stack.push(String.valueOf(a/b));
-                    /*        System.out.println("a = " +a);
-                            System.out.println("b = " + b);*/
+                // 스텍의 인덱스로 확인
+                if(!(isNumber(stack.get(stack.size()-1))&&isNumber(stack.get(stack.size()-2))))break;
 
-                        } else if (stack.peek().equals("+")){
-                            stack.pop();
-                            stack.push(String.valueOf(a+b));
+                a = Integer.parseInt(stack.pop());
+                b = Integer.parseInt(stack.pop());
 
-                        }else if (stack.peek().equals("-")){
-                            stack.pop();
-                            stack.push(String.valueOf(a-b));
-                        }else {
-                            break;
-                        }
-                    }else {
-                        stack.push(String.valueOf(a));
-                        break;
-                    }
-                }else{
-                    break;
+                String operator = stack.pop();
+                if(operator.equals("*")){
+                    stack.push(String.valueOf(a*b));
+                } else if (operator.equals("/")){
+                    stack.push(String.valueOf(a/b));
+                } else if (operator.equals("+")){
+                    stack.push(String.valueOf(a+b));
+                }else if (operator.equals("-")){
+                    stack.push(String.valueOf(a-b));
                 }
+
             }
            } System.out.println(stack.peek());
-
     }
+
     // 숫자를 판단하는 함수!
     public static boolean isNumber(String str) {
         try {
