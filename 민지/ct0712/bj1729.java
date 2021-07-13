@@ -11,7 +11,9 @@ public class bj1729 {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+
         int n = Integer.parseInt(br.readLine());
+
         double[] grade = new double[n];
         for(int i = 0; i < n; i++){
             grade[i] = Double.parseDouble(br.readLine());
