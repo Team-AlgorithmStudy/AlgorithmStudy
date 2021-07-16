@@ -23,12 +23,12 @@ public class Test10807 {
 
 				if (arr[i].charAt(j) == 'O') {
 					count++;
+					sum += count;
 				} 
-				else {
+				else if (arr[i].charAt(j) == 'X') {
 					count = 0;
 				}
 				
-				sum += count;
 			}
 			System.out.println(sum);
 		}
