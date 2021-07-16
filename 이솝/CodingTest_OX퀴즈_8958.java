@@ -24,8 +24,7 @@ public class Test10807 {
 				if (arr[i].charAt(j) == 'O') {
 					count++;
 					sum += count;
-				} 
-				else if (arr[i].charAt(j) == 'X') {
+				} else if (arr[i].charAt(j) == 'X') {
 					count = 0;
 				}
 				
