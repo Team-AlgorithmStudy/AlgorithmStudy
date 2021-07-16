@@ -27,7 +27,6 @@ public class Test10807 {
 				} else if (arr[i].charAt(j) == 'X') {
 					count = 0;
 				}
-				
 			}
 			System.out.println(sum);
 		}
