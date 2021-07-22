@@ -13,7 +13,7 @@ public class bj1681 {
 
         int count = 0;
 
-        for (int i = 1; i <= 1000000; i++) {
+        for (int i = 1; i <= 99999999; i++) {
             String check = String.valueOf(i);
 
             if (!check.contains(String.valueOf(l))) {
@@ -21,7 +21,7 @@ public class bj1681 {
             }
             if (count == n) {
                 System.out.println(i);
-                break;
+                return;
             }
         }
     }
