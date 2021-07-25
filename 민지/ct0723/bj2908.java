@@ -9,10 +9,19 @@ public class bj2908 {
         String A = sc.next();
         String B = sc.next();
 
-
+        String tmp = "";
+        String tmp2 = "";
         for(int i = A.length()-1; i >= 0; i --){
-            char tmp = A.charAt(i);
-            char tmp2 = B.charAt(i);
+             tmp += A.charAt(i);
+             tmp2 += B.charAt(i);
         }
+        int answer = 0;
+        if(Integer.parseInt(tmp) > Integer.parseInt(tmp2)){
+            answer = Integer.parseInt(tmp);
+        }else {
+            answer  = Integer.parseInt(tmp2);
+        }
+
+        System.out.println(answer);
     }
 }
