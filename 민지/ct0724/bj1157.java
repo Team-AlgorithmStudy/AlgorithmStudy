@@ -7,7 +7,6 @@ public class bj1157 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // 다시 풀기
         String word = sc.nextLine().strip();
         char[] arr = word.toUpperCase(Locale.ROOT).toCharArray();
 
