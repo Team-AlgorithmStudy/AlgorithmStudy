@@ -16,7 +16,7 @@ public class bj2941 {
             }
         }
         System.out.println(str.length());
-       /* String[] word = sc.nextLine().split("");
+  /*      String[] word = sc.nextLine().split("");
         int count = 0;
 
         for(int i = 0; i< word.length; i++){
