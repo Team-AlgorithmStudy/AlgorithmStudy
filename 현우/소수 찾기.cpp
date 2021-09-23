@@ -9,7 +9,7 @@ vector<int>sosu;
 int num[10] = { 0, };
 int ar[10];
 void init(string number) {
-	for (int i = 2; i <= sqrt(9999999); i++) {
+	for (int i = 2; i <= 9999999; i++) {
 		if (!check[i]) {
 			sosu.push_back(i);
 			for (int j = i + i; j <= 9999999; j += i) {
